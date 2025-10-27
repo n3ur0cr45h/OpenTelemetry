@@ -107,7 +107,31 @@ O1.8 - Hierarquia entre Spans (Parent | Child)
 O1.9 - Estrutura de Métrica
  > - As métricas no OTel são compostas por três elementos principais:
  >   - Instrumento:
- >     -   
+ >     - Ponto de medição no código - tipo de métrica sendo coletada;
+ >     - Tipos de Instrumento:
+ >       - Counter: Contagem de eventos cumulativos (Só aumenta);
+ >       - UpDownCounter: Aumenta ou Diminui;
+ >       - Histogram: Distribuição de Valores;
+ >       - Gauge: Valor atual de algo.
+ >   - Unidade:
+ >     - Define o que está sendo medido - unidade semântica, para padronização e integração com ferramentas de visualização.
+ >       - seconds: Tempo; 
+ >       - bytes: Tamanho;  
+ >       - requests: Contagem de eventos.
+ >    - Agregação:
+ >      - Define como os valores observados são combinados ao longo do tempo.
+ >        - Sum;
+ >        - LastValue;
+ >        - Histogram;
+ >        - ExponentialHistogram.
+
+O1.10 - W3C Trace Context Specification 
+ > - Define como o contexto de rastreamento é propagado entre serviços;
+ > - Como os serviços compartilham o identificador de trace e span, ao longo de uma requisição distribuída;
+ > - O objetivo é garantir que diferentes sistemas e frameworks possam reconhecer e continuar um mesmo trace de ponta a ponta.
+ > - Cabeçalhos Principais:
+ >   - traceparent: Contém os identificadores do trace e do span;
+ >   - tracestate: Metadados adicionais, usados por provedores específicos.        
 
 </div> 
 </details>
