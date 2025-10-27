@@ -76,7 +76,38 @@ O1.6 - Processors | Pipelines
  > - Pipelines:
  >   - Fluxos lógicos de conexão dos Receivers -> Processors -> Exporters;
  >   - Cada tipo de dados (traces, metrics, logs), tem sua própria pipeline.
-   
+
+O1.7 - Spans | Traces | Contextos 
+ > - Tríade da base do Rastreamento Distribuído.
+ >   - Span:
+ >     - Unidade individual de trabalho dentro de uma operação maior;
+ >     - Cada Span contém informações como:
+ >       - Nome;
+ >       - Início e Fim (Timestamp);
+ >       - Atributos;
+ >       - Eventos;
+ >       - Contexto (SpanContext).
+ >
+ >    - Trace:
+ >      - Conjunto de Spans conectados entre si;
+ >      - Representa a jornada completa de uma requisição;
+ >      - Cada Trace tem um Trace ID único, que identifica toda a cadeia.
+ >
+ >    - Contexto:
+ >      - "Fio Condutor", que conecta os spans entre si;
+ >      - Contém o Trace ID e o Span ID do Span Atual (Ativo);
+ >      - Propagado entre serviços, para manter o trace contínuo em sistemas distribuídos.
+
+O1.8 - Hierarquia entre Spans (Parent | Child) 
+ > - Spans podem se encadear hierarquicamente, formando uma árvore de execução:
+ >   - O primeiro span é o "Root Span" (Sem pai);
+ >   - Spans criados dentro dele, são "Child Spans";
+ >   - Cada Child Span herda o Trace ID do Root, mas tem seu próprio Span ID.   
+
+O1.9 - Estrutura de Métrica
+ > - As métricas no OTel são compostas por três elementos principais:
+ >   - Instrumento:
+ >     -   
 
 </div> 
 </details>
