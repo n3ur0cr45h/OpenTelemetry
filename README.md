@@ -133,24 +133,14 @@ O1.10 - W3C Trace Context Specification
  >   - traceparent: Contém os identificadores do trace e do span;
  >   - tracestate: Metadados adicionais, usados por provedores específicos.        
 
-</div> 
-</details>
-
-----
-
-<details>
-  <summary><b> 2. Intermediário</b></summary>
-<div align="Left">  
-<br>  
-
-O2.1 - Fluxo de Dados
+O1.11 - Fluxo de Dados
  > - Aplicação -> OTel SDK -> OTel Collector -> Backend (Grafana, Prometheus, Tempo, etc.)
  > - Etapa 1: O código é instrumentaod com o OTel SDK - que coleta os dados de telemetria (Traces, Métricas e Logs);
  > - Etapa 2: O SDK pode exportar os dados diretamente (via exporters), ou enviar para um Collector - usando o OTLP;
  > - Etapa 3: O Collector é o agente de processamento e roteamento, recebendo, transformando e exportando os dados aos Backends;
  > - Etapa 4: Backend - sistemas de observabilidade -, recebem os dados.
 
-O2.2 - Agent Mode | Gateway Mode
+O1.12 - Agent Mode | Gateway Mode
  > - Agent Mode:
  >   - Collector roda localmente junto da aplicação - no mesmo host ou contêiner;
  >   - Coleta os dados diretamente do SDK.
@@ -158,13 +148,10 @@ O2.2 - Agent Mode | Gateway Mode
  >   - Collector roda centralizado - como um serviço ou deployment;
  >   - Recebe dados de vários agentes ou SDKs.   
 
-</div> 
-</details>
-
 ----
 
 <details>
-  <summary><b> 3. Avançado</b></summary>
+  <summary><b> Projetos </b></summary>
 <div align="Left">  
 <br>  
 
@@ -172,5 +159,3 @@ O2.2 - Agent Mode | Gateway Mode
 
 </div> 
 </details>
-
-----
