@@ -148,6 +148,9 @@ O1.12 - Agent Mode | Gateway Mode
  >   - Collector roda centralizado - como um serviço ou deployment;
  >   - Recebe dados de vários agentes ou SDKs.   
 
+</div> 
+</details>
+
 ----
 
 <details>
@@ -159,3 +162,5 @@ O1.12 - Agent Mode | Gateway Mode
 
 </div> 
 </details>
+
+----
