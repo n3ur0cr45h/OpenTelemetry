@@ -165,6 +165,7 @@ O1.12 - Agent Mode | Gateway Mode
 | P3  | Docker - OTel - Grafana | Visualização de Métricas do Kafka                           | <a href="https://github.com/n3ur0cr45h/Projetos/tree/main/Docker/3.%20Compose%20-%20Kafka"> Observabilidade Kafka </a> |
 | P4  | Docker - OTel - Grafana | Visualização de Métricas do RabbitMQ                        | <a href="https://github.com/n3ur0cr45h/Projetos/tree/main/Docker/4.%20Compose%20-%20RabbitMQ"> Observabilidade RabbitMQ </a> |
 | P5  | Docker - OTel - Grafana / Mimir | Visualização de Métricas com Mimir                  | <a href="https://github.com/n3ur0cr45h/Projetos/tree/main/Docker/5.%20Compose%20-%20Mimir"> Observabilidade c/ Mimir </a> |
+| P6  | Docker - OTel - Stack LGTM | Ambiente Grafana Completo                                | <a href="https://github.com/n3ur0cr45h/Projetos/tree/main/Docker/6.%20Compose%20-%20Stack%20LGTM"> Observabilidade Stack Grafana </a> |
 
 </div> 
 </details>
